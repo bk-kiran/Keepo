@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, BarChart, Search, Upload, Receipt, CheckCircle2 } from "lucide-react";
 import Link from "next/link";
+import PDFDropZone from "@/components/PDFDropZone";
 
 
 export default function Home() {
@@ -40,7 +41,7 @@ export default function Home() {
           <div className="relative w-full max-w-3xl rounded-lg border border-gray-200 bg-white shadow-lg overflow-hidden dark:border-gray-800 dark:bg-gray-950">
             <div className="p-6 md:p-8 relative flex flex-col items-center justify-center min-h-[200px] border-2 border-dashed border-gray-300 dark:border-gray-700 rounded-lg">
               <Receipt className="w-12 h-12 text-gray-400 mb-4" />
-              <p className="text-gray-500 dark:text-gray-400 text-sm md:text-base">Drag and drop your receipts here or click to upload</p>
+              <PDFDropZone />
             </div>
           </div>
         </div>
