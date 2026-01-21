@@ -210,20 +210,16 @@ const Receipt = () => {
                                     </div>
                                 </div>
                             </div>
-                        </div>
-
-                        
-                        <div className="flex items-center justify-center p-8 bg-gray-50 rounded-lg mt-6">
-                            <div className="text-center">
-                                <FileText className="h-16 w-16 text-blue-500 mx-auto"/>
-                                <p className="mt-4 text-sm text-gray-500">PDF Preview</p>
+                            
+                            <div className="flex items-center justify-center bg-gray-50 p-4 rounded-lg">
                                 {downloadUrl && (
                                     <a
-                                    href={downloadUrl}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="mt-4 inline-flex items-center px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
+                                        href={downloadUrl}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="inline-flex items-center px-6 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors"
                                     >
+                                        <FileText className="w-5 h-5 mr-2" />
                                         View PDF
                                     </a>
                                 )}
